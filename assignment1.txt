@@ -1,0 +1,30 @@
+
+// 1.year is a leap year or not.
+function leapYear(year){
+    return (year %100==0) ? (year % 400==0) :(year % 4===0);
+}
+
+const isLeapYear=leapYear(2020);
+console.log(isLeapYear);
+// 2.Fahrenheit and Celsius
+let farn=40;
+let cels=(farn-32) *(5/9);
+console.log('celsius-',cels);
+
+let cels=30;
+let farn=(cels*(9/5))+32;
+console.log('Fahrenheit ',farn);
+
+// 3.find a factorial number 
+let number=4;
+let factorial=1;
+let num;
+if(number < 0){
+    console.log("can't find factorial for negative numebr");
+}
+else{
+    for(num=2;num<=number;num++){
+        factorial=factorial * num;
+    }
+    console.log(`${num}!=${factorial}`)
+};
